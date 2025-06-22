@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+    /* Align all items vertically centered */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.navbar__S1--title {
+    color: #a435f0;
+}
+
+.navbar__S2 {
+    border: 1px solid black;
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    gap: 8px;
+    border-radius: 30px;
+    align-items: center;
+    /* Align all items vertically centered */
+}
+
+.navbar__S2 input {
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    padding: 5px;
+}
+
+.navbar__S2 input:focus {
+    outline: none;
+}
+
+.navbar__S3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* Align all items vertically centered */
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+    justify-content: space-around;
+    /* Center items when wrapping */
+    gap: 10px;
+    /* Adds spacing between items */
+    margin-top: 10px;
+    padding: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.category p {
+    padding: 10px 30px;
+    background-color: #a435f0;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    /* Prevents text from wrapping inside buttons */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    .category {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category p {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 80%;
+        /* Makes each button span most of the screen */
+        white-space: normal;
+        /* Allow wrapping if needed on smaller devices */
+    }
+}
+
+.saleimage img {
+    width: 100%;
+    height: 500px;
+    /* Set your desired fixed height */
+    object-fit: cover;
+    /* Ensures the image fills the container without distortion */
+}
+
+.recommended {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.recommend__title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.recommended>p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.course-card {
+    flex-grow: 1;
+    min-width: 350px;
+    max-width: 300px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+
+
+.course-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.course-card__content {
+    padding: 20px;
+}
+
+.course-card__desc {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.course-card__writer {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.course-card__rating {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.course-card__price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c5aa0;
+}
+
+.course-card__price::before {
+    content: "₹";
+}
+
+.course-card__price del {
+    color: #999;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.course-card__price del::before {
+    content: "₹";
+}
+
+.topics__container {
+    padding: 30px;
+}
+
+.tech__name {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tech__name p {
+    border: 1px solid black;
+    padding: 8px;
+    flex-grow: 1;
+    flex-basis: 25%;
+
+}
+
+.popular-courses {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.popular-courses__title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.popular-courses>p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.footer__one{
+    display: flex;
+    gap: 10px;
+}
+.footer__one p{
+    margin: 20px;
+}
+.footer__two{
+       margin: 20px;
+       align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    padding: 30px;
+    background-color: #333;
+    color: white;
+}
